@@ -39,6 +39,11 @@ img {
   list-style: none;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* Шапка */
 
 .header {
@@ -48,6 +53,7 @@ img {
 .main-nav {
   display: flex;
   align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 
 .nav {
@@ -224,7 +230,6 @@ img {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 94px;
   justify-content: center;
 }
 
@@ -239,14 +244,7 @@ img {
 /* Наша команда */
 
 .command {
-  padding-top: 0;
-  padding-bottom: 0;
-
   background-color: #f5f4fa;
-}
-
-.command > .container {
-  padding: 94px 0;
 }
 
 .features-title {
@@ -280,10 +278,6 @@ img {
 
 .comand-img {
   margin-bottom: 0;
-}
-
-.comand-img > .comand-meta {
-  flex-grow: 1;
 }
 
 .command-item:last-child {
@@ -379,7 +373,6 @@ img {
 .filter {
   margin-left: 0;
   margin-right: 0;
-  margin-top: 94px;
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
@@ -428,13 +421,11 @@ img {
   text-decoration: none;
 }
 
-.gallery-lists > .gallery-sign {
-  flex-grow: 1;
-}
-
 .gallery-sign {
-  padding: 20px 24px;
-  background-color: #fff;
+  width: 370px;
+  box-sizing: border-box;
+  border: 1px solid #eeeeee;
+  padding: 32px 24px;
 }
 
 .gallery-item {
@@ -447,7 +438,7 @@ img {
 }
 
 .gallery-item:nth-last-child(-n + 3) {
-  margin-bottom: 94px;
+  margin-bottom: 0;
 }
 
 .gallery-title {
