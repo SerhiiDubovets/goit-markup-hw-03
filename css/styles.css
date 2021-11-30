@@ -15,6 +15,13 @@ body {
   letter-spacing: 0.03em;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
 ul {
   margin: 0;
   padding: 0;
@@ -23,6 +30,8 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -31,12 +40,6 @@ img {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
 }
 
 .section {
@@ -48,12 +51,12 @@ img {
 
 .header {
   background-color: #ffffff;
+  border-bottom: 1px solid #ececec;
 }
 
 .main-nav {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid #ececec;
 }
 
 .nav {
@@ -77,7 +80,7 @@ img {
 
 .site-nav {
   display: flex;
-  margin-left: 40px;
+  margin-left: 93px;
 }
 
 .site-nav-item + .site-nav-item {
@@ -96,6 +99,10 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+}
+
+.studio {
+  color: var(--accent-color);
 }
 
 .portfolio,
@@ -131,6 +138,10 @@ img {
 /* Заказ услуги  */
 
 .hero {
+  padding: 200px 0;
+
+  background-color: #2f303a;
+
   text-align: center;
 }
 
@@ -157,13 +168,11 @@ img {
 }
 
 .hero-title {
-  margin-top: 0;
   margin-bottom: 30px;
   width: 696px;
   margin-left: auto;
   margin-right: auto;
 
-  background-color: #757575;
   color: #ffffff;
 
   font-weight: 900;
@@ -197,7 +206,6 @@ img {
   margin-right: 0px;
 }
 .features-title {
-  margin-top: 0;
   margin-bottom: 10px;
 
   color: var(--primary-text-color);
@@ -209,15 +217,15 @@ img {
 }
 
 .features-text {
-  margin-top: 0;
-  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 /* Чем мы занимаемся */
 
 .work-titles,
 .command-titles {
-  margin-top: 0;
   margin-bottom: 50px;
 
   color: var(--primary-text-color);
@@ -230,9 +238,6 @@ img {
 
 .work-list {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
 }
 
 .work-item {
@@ -271,8 +276,8 @@ img {
 }
 
 .comand-meta {
-  margin-top: 0;
-  margin-left: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
   padding-left: 0;
 
   background-color: #fff;
@@ -288,8 +293,7 @@ img {
 }
 
 .command-title {
-  margin-top: 0;
-  padding-top: 30px;
+  margin-bottom: 10px;
 
   color: var(--primary-text-color);
 
@@ -301,10 +305,6 @@ img {
 }
 
 .command-text {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 30px;
-
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -312,12 +312,9 @@ img {
 
 /* footer */
 
-.footer > .container {
-  padding: 60px 0;
-}
-
 .footer {
   background-color: #2f303a;
+  padding: 60px 0;
 }
 
 .footer-logo {
@@ -342,14 +339,12 @@ img {
   line-height: 1.71;
 }
 
-.address-list:last-child {
-  display: block;
-  margin-bottom: 0;
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .address-lists {
   display: block;
-  margin-bottom: 9px;
 
   color: #ffffff;
 
@@ -358,7 +353,6 @@ img {
 
 .address-link {
   display: block;
-  margin-bottom: 9px;
 
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
@@ -375,8 +369,6 @@ img {
 }
 
 .filter {
-  margin-left: 0;
-  margin-right: 0;
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
@@ -446,7 +438,6 @@ img {
 }
 
 .gallery-title {
-  margin-top: 0;
   margin-bottom: 4px;
 
   color: var(--primary-text-color);
@@ -455,13 +446,9 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  text-decoration: none;
 }
 
 .gallery-text {
-  margin-top: 0;
-  margin-bottom: 0;
-
   color: var(--title-text-color);
 
   font-size: 16px;
